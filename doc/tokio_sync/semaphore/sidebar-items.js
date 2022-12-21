@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"struct":[["AcquireError","Error returned by `Permit::poll_acquire`."],["Permit","A semaphore permit"],["Semaphore","Futures-aware semaphore."],["TryAcquireError","Error returned by `Permit::try_acquire`."]]};

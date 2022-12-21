@@ -1,0 +1,10 @@
+/Users/terrell/Downloads/rust_fix-main/finall_project/./debug/deps/parking_lot_core-207596957be09925.rmeta: /Users/terrell/.cargo/registry/src/github.com-1ecc6299db9ec823/parking_lot_core-0.4.0/src/lib.rs /Users/terrell/.cargo/registry/src/github.com-1ecc6299db9ec823/parking_lot_core-0.4.0/src/thread_parker/unix.rs /Users/terrell/.cargo/registry/src/github.com-1ecc6299db9ec823/parking_lot_core-0.4.0/src/parking_lot.rs /Users/terrell/.cargo/registry/src/github.com-1ecc6299db9ec823/parking_lot_core-0.4.0/src/spinwait.rs /Users/terrell/.cargo/registry/src/github.com-1ecc6299db9ec823/parking_lot_core-0.4.0/src/util.rs /Users/terrell/.cargo/registry/src/github.com-1ecc6299db9ec823/parking_lot_core-0.4.0/src/word_lock.rs
+
+/Users/terrell/Downloads/rust_fix-main/finall_project/./debug/deps/parking_lot_core-207596957be09925.d: /Users/terrell/.cargo/registry/src/github.com-1ecc6299db9ec823/parking_lot_core-0.4.0/src/lib.rs /Users/terrell/.cargo/registry/src/github.com-1ecc6299db9ec823/parking_lot_core-0.4.0/src/thread_parker/unix.rs /Users/terrell/.cargo/registry/src/github.com-1ecc6299db9ec823/parking_lot_core-0.4.0/src/parking_lot.rs /Users/terrell/.cargo/registry/src/github.com-1ecc6299db9ec823/parking_lot_core-0.4.0/src/spinwait.rs /Users/terrell/.cargo/registry/src/github.com-1ecc6299db9ec823/parking_lot_core-0.4.0/src/util.rs /Users/terrell/.cargo/registry/src/github.com-1ecc6299db9ec823/parking_lot_core-0.4.0/src/word_lock.rs
+
+/Users/terrell/.cargo/registry/src/github.com-1ecc6299db9ec823/parking_lot_core-0.4.0/src/lib.rs:
+/Users/terrell/.cargo/registry/src/github.com-1ecc6299db9ec823/parking_lot_core-0.4.0/src/thread_parker/unix.rs:
+/Users/terrell/.cargo/registry/src/github.com-1ecc6299db9ec823/parking_lot_core-0.4.0/src/parking_lot.rs:
+/Users/terrell/.cargo/registry/src/github.com-1ecc6299db9ec823/parking_lot_core-0.4.0/src/spinwait.rs:
+/Users/terrell/.cargo/registry/src/github.com-1ecc6299db9ec823/parking_lot_core-0.4.0/src/util.rs:
+/Users/terrell/.cargo/registry/src/github.com-1ecc6299db9ec823/parking_lot_core-0.4.0/src/word_lock.rs:

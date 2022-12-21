@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"struct":[["String","A UTF-8 encoded string with configurable byte storage."]],"trait":[["TryFrom","Attempt to construct `Self` via a conversion."]]};

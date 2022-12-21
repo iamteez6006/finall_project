@@ -1,0 +1,133 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="Source of the Rust file `/Users/terrell/.cargo/registry/src/github.com-1ecc6299db9ec823/lambda_runtime_client-0.2.1/src/lib.rs`."><meta name="keywords" content="rust, rustlang, rust-lang"><title>lib.rs - source</title><link rel="preload" as="font" type="font/woff2" crossorigin href="../../SourceSerif4-Regular.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../FiraSans-Regular.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../FiraSans-Medium.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../SourceCodePro-Regular.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../SourceSerif4-Bold.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../SourceCodePro-Semibold.ttf.woff2"><link rel="stylesheet" type="text/css" href="../../normalize.css"><link rel="stylesheet" type="text/css" href="../../rustdoc.css" id="mainThemeStyle"><link rel="stylesheet" type="text/css" href="../../ayu.css" disabled><link rel="stylesheet" type="text/css" href="../../dark.css" disabled><link rel="stylesheet" type="text/css" href="../../light.css" id="themeStyle"><script id="default-settings" ></script><script src="../../storage.js"></script><script defer src="../../source-script.js"></script><script defer src="../../source-files.js"></script><script defer src="../../main.js"></script><noscript><link rel="stylesheet" href="../../noscript.css"></noscript><link rel="alternate icon" type="image/png" href="../../favicon-16x16.png"><link rel="alternate icon" type="image/png" href="../../favicon-32x32.png"><link rel="icon" type="image/svg+xml" href="../../favicon.svg"></head><body class="rustdoc source"><!--[if lte IE 11]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><nav class="mobile-topbar"><button class="sidebar-menu-toggle">&#9776;</button><a class="sidebar-logo" href="../../lambda_runtime_client/index.html"><div class="logo-container"><img class="rust-logo" src="../../rust-logo.svg" alt="logo"></div>
+        </a><h2 class="location"></h2>
+    </nav>
+    <nav class="sidebar"><a class="sidebar-logo" href="../../lambda_runtime_client/index.html"><div class="logo-container"><img class="rust-logo" src="../../rust-logo.svg" alt="logo"></div>
+        </a></nav><main><div class="width-limiter"><div class="sub-container"><a class="sub-logo-container" href="../../lambda_runtime_client/index.html"><img class="rust-logo" src="../../rust-logo.svg" alt="logo"></a><nav class="sub"><form class="search-form"><div class="search-container"><span></span><input class="search-input" name="search" autocomplete="off" spellcheck="false" placeholder="Click or press ‘S’ to search, ‘?’ for more options…" type="search"><button type="button" id="help-button" title="help">?</button><div id="settings-menu" tabindex="-1">
+                                <a href="../../settings.html" title="settings"><img width="22" height="22" alt="Change settings" src="../../wheel.svg"></a></div>
+                        </div></form></nav></div><section id="main-content" class="content"><div class="example-wrap"><pre class="line-numbers"><span id="1">1</span>
+<span id="2">2</span>
+<span id="3">3</span>
+<span id="4">4</span>
+<span id="5">5</span>
+<span id="6">6</span>
+<span id="7">7</span>
+<span id="8">8</span>
+<span id="9">9</span>
+<span id="10">10</span>
+<span id="11">11</span>
+<span id="12">12</span>
+<span id="13">13</span>
+<span id="14">14</span>
+<span id="15">15</span>
+<span id="16">16</span>
+<span id="17">17</span>
+<span id="18">18</span>
+<span id="19">19</span>
+<span id="20">20</span>
+<span id="21">21</span>
+<span id="22">22</span>
+<span id="23">23</span>
+<span id="24">24</span>
+<span id="25">25</span>
+<span id="26">26</span>
+<span id="27">27</span>
+<span id="28">28</span>
+<span id="29">29</span>
+<span id="30">30</span>
+<span id="31">31</span>
+<span id="32">32</span>
+<span id="33">33</span>
+<span id="34">34</span>
+<span id="35">35</span>
+<span id="36">36</span>
+<span id="37">37</span>
+<span id="38">38</span>
+<span id="39">39</span>
+<span id="40">40</span>
+<span id="41">41</span>
+<span id="42">42</span>
+<span id="43">43</span>
+<span id="44">44</span>
+<span id="45">45</span>
+<span id="46">46</span>
+<span id="47">47</span>
+<span id="48">48</span>
+<span id="49">49</span>
+<span id="50">50</span>
+<span id="51">51</span>
+<span id="52">52</span>
+<span id="53">53</span>
+<span id="54">54</span>
+<span id="55">55</span>
+<span id="56">56</span>
+<span id="57">57</span>
+<span id="58">58</span>
+<span id="59">59</span>
+<span id="60">60</span>
+<span id="61">61</span>
+<span id="62">62</span>
+</pre><pre class="rust"><code><span class="attribute">#![<span class="ident">warn</span>(<span class="ident">missing_docs</span>)]</span>
+<span class="attribute">#![<span class="ident">deny</span>(<span class="ident">warnings</span>)]</span>
+<span class="attribute">#![<span class="ident">allow</span>(<span class="ident">clippy::new_ret_no_self</span>)]</span>
+<span class="doccomment">//! Rust client SDK for the AWS Lambda Runtime APIs. This crate defines</span>
+<span class="doccomment">//! a `RuntimeClient` that encapsulates interactions with AWS Lambda&#39;s Runtime</span>
+<span class="doccomment">//! APIs.</span>
+<span class="doccomment">//!</span>
+<span class="doccomment">//! To return errors to the Runtime APIs through the `event_error()` or</span>
+<span class="doccomment">//! `fail_init()` methods the `Error` objects must implement the `error::RuntimeApiError`</span>
+<span class="doccomment">//! trait from this crate. The RuntimeApiError trait defines a single method</span>
+<span class="doccomment">//! called `to_response()`. The method must return an `error::RuntimeError` object.</span>
+<span class="doccomment">//! See the `error::ApiError` object in this crate for an example.</span>
+<span class="doccomment">//!</span>
+<span class="doccomment">//! # Examples</span>
+<span class="doccomment">//!</span>
+<span class="doccomment">//! ```rust,no_run</span>
+<span class="doccomment">//! extern crate lambda_runtime_client;</span>
+<span class="doccomment">//! #[macro_use]</span>
+<span class="doccomment">//! extern crate serde_derive;</span>
+<span class="doccomment">//! extern crate serde_json;</span>
+<span class="doccomment">//!</span>
+<span class="doccomment">//! use lambda_runtime_client::{RuntimeClient, EventContext};</span>
+<span class="doccomment">//!</span>
+<span class="doccomment">//! #[derive(Serialize, Deserialize, Debug)]</span>
+<span class="doccomment">//! struct CustomEvent {</span>
+<span class="doccomment">//!     name: String,</span>
+<span class="doccomment">//! }</span>
+<span class="doccomment">//!</span>
+<span class="doccomment">//! #[derive(Serialize, Deserialize, Debug)]</span>
+<span class="doccomment">//! struct CustomResponse {</span>
+<span class="doccomment">//!     surname: String,</span>
+<span class="doccomment">//! }</span>
+<span class="doccomment">//!</span>
+<span class="doccomment">//! fn main() {</span>
+<span class="doccomment">//!     let client = RuntimeClient::new(&quot;http://localhost:8080&quot;, None, None)</span>
+<span class="doccomment">//!         .expect(&quot;Could not initialize client&quot;);</span>
+<span class="doccomment">//!</span>
+<span class="doccomment">//!     let (event_data, event_context) = client.next_event()</span>
+<span class="doccomment">//!         .expect(&quot;Could not retrieve next event&quot;);</span>
+<span class="doccomment">//!     let custom_event: CustomEvent = serde_json::from_slice(&amp;event_data)</span>
+<span class="doccomment">//!         .expect(&quot;Could not turn Vec&lt;u8&gt; into CustomEvent object&quot;);</span>
+<span class="doccomment">//!</span>
+<span class="doccomment">//!     println!(&quot;Event for {}&quot;, custom_event.name);</span>
+<span class="doccomment">//!     if custom_event.name == &quot;John&quot; {</span>
+<span class="doccomment">//!         let resp_object = CustomResponse{ surname: String::from(&quot;Doe&quot;)};</span>
+<span class="doccomment">//!         let resp_vec = serde_json::to_vec(&amp;resp_object)</span>
+<span class="doccomment">//!             .expect(&quot;Could not serialize CustomResponse to Vec&lt;u8&gt;&quot;);</span>
+<span class="doccomment">//!         client.event_response(&amp;event_context.aws_request_id, &amp;resp_vec)</span>
+<span class="doccomment">//!             .expect(&quot;Response sent successfully&quot;);</span>
+<span class="doccomment">//!     } else {</span>
+<span class="doccomment">//!         // return a custom error by implementing the RuntimeApiError trait.</span>
+<span class="doccomment">//!         // See the error module for examples.</span>
+<span class="doccomment">//!         //client.event_error(&amp;event_context.aws_request_id, CustomErrorType::new(&quot;Invalid first name&quot;))</span>
+<span class="doccomment">//!         //    .expect(&quot;Could not send error response&quot;);</span>
+<span class="doccomment">//!     }</span>
+<span class="doccomment">//! }</span>
+<span class="doccomment">//! ```</span>
+
+<span class="kw">mod</span> <span class="ident">client</span>;
+<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">error</span>;
+
+<span class="kw">pub</span> <span class="kw">use</span> <span class="ident"><span class="kw">crate</span>::client</span>::<span class="kw-2">*</span>;
+</code></pre></div>
+</section></div></main><div id="rustdoc-vars" data-root-path="../../" data-current-crate="lambda_runtime_client" data-themes="ayu,dark,light" data-resource-suffix="" data-rustdoc-version="1.63.0 (4b91a6ea7 2022-08-08)" ></div>
+</body></html>

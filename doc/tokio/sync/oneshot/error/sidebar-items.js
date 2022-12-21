@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"struct":[["RecvError","Error returned by the `Future` implementation for `Receiver`."],["TryRecvError","Error returned by the `try_recv` function on `Receiver`."]]};

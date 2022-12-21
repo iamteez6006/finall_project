@@ -1,0 +1,1 @@
+window.ALL_CRATES = ["my_test_dir"];

@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"struct":[["Error","Error returned by `Timeout`."],["Timeout","Allows a `Future` or `Stream` to execute for a limited amount of time."]]};

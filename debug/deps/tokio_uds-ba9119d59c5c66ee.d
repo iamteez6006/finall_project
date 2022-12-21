@@ -1,0 +1,13 @@
+/Users/terrell/Downloads/rust_fix-main/finall_project/./debug/deps/tokio_uds-ba9119d59c5c66ee.rmeta: /Users/terrell/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-uds-0.2.5/src/lib.rs /Users/terrell/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-uds-0.2.5/src/datagram.rs /Users/terrell/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-uds-0.2.5/src/frame.rs /Users/terrell/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-uds-0.2.5/src/incoming.rs /Users/terrell/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-uds-0.2.5/src/listener.rs /Users/terrell/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-uds-0.2.5/src/recv_dgram.rs /Users/terrell/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-uds-0.2.5/src/send_dgram.rs /Users/terrell/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-uds-0.2.5/src/stream.rs /Users/terrell/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-uds-0.2.5/src/ucred.rs
+
+/Users/terrell/Downloads/rust_fix-main/finall_project/./debug/deps/tokio_uds-ba9119d59c5c66ee.d: /Users/terrell/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-uds-0.2.5/src/lib.rs /Users/terrell/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-uds-0.2.5/src/datagram.rs /Users/terrell/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-uds-0.2.5/src/frame.rs /Users/terrell/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-uds-0.2.5/src/incoming.rs /Users/terrell/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-uds-0.2.5/src/listener.rs /Users/terrell/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-uds-0.2.5/src/recv_dgram.rs /Users/terrell/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-uds-0.2.5/src/send_dgram.rs /Users/terrell/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-uds-0.2.5/src/stream.rs /Users/terrell/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-uds-0.2.5/src/ucred.rs
+
+/Users/terrell/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-uds-0.2.5/src/lib.rs:
+/Users/terrell/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-uds-0.2.5/src/datagram.rs:
+/Users/terrell/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-uds-0.2.5/src/frame.rs:
+/Users/terrell/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-uds-0.2.5/src/incoming.rs:
+/Users/terrell/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-uds-0.2.5/src/listener.rs:
+/Users/terrell/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-uds-0.2.5/src/recv_dgram.rs:
+/Users/terrell/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-uds-0.2.5/src/send_dgram.rs:
+/Users/terrell/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-uds-0.2.5/src/stream.rs:
+/Users/terrell/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-uds-0.2.5/src/ucred.rs:

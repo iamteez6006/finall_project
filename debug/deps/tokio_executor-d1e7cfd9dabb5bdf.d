@@ -1,0 +1,11 @@
+/Users/terrell/Downloads/rust_fix-main/finall_project/./debug/deps/tokio_executor-d1e7cfd9dabb5bdf.rmeta: /Users/terrell/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-executor-0.1.7/src/lib.rs /Users/terrell/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-executor-0.1.7/src/enter.rs /Users/terrell/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-executor-0.1.7/src/error.rs /Users/terrell/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-executor-0.1.7/src/executor.rs /Users/terrell/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-executor-0.1.7/src/global.rs /Users/terrell/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-executor-0.1.7/src/park.rs /Users/terrell/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-executor-0.1.7/src/typed.rs
+
+/Users/terrell/Downloads/rust_fix-main/finall_project/./debug/deps/tokio_executor-d1e7cfd9dabb5bdf.d: /Users/terrell/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-executor-0.1.7/src/lib.rs /Users/terrell/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-executor-0.1.7/src/enter.rs /Users/terrell/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-executor-0.1.7/src/error.rs /Users/terrell/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-executor-0.1.7/src/executor.rs /Users/terrell/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-executor-0.1.7/src/global.rs /Users/terrell/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-executor-0.1.7/src/park.rs /Users/terrell/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-executor-0.1.7/src/typed.rs
+
+/Users/terrell/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-executor-0.1.7/src/lib.rs:
+/Users/terrell/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-executor-0.1.7/src/enter.rs:
+/Users/terrell/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-executor-0.1.7/src/error.rs:
+/Users/terrell/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-executor-0.1.7/src/executor.rs:
+/Users/terrell/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-executor-0.1.7/src/global.rs:
+/Users/terrell/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-executor-0.1.7/src/park.rs:
+/Users/terrell/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-executor-0.1.7/src/typed.rs:

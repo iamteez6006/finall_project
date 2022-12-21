@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"trait":[["FutureExt","An extension trait for `Future` that provides a variety of convenient combinator functions."],["StreamExt","An extension trait for `Stream` that provides a variety of convenient combinator functions."]]};

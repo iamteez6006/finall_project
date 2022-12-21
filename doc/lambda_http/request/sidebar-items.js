@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"enum":[["RequestContext","Event request context as an enumeration of request contexts for both ALB and API Gateway http events"]],"struct":[["Elb","Elastic load balancer context information"],["Identity","Identity assoicated with API Gateway request"]]};

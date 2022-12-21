@@ -1,0 +1,4 @@
+(function() {var implementors = {};
+implementors["failure"] = [];
+implementors["lambda_runtime_client"] = [{"text":"impl <a class=\"trait\" href=\"failure/trait.Fail.html\" title=\"trait failure::Fail\">Fail</a> for <a class=\"enum\" href=\"lambda_runtime_client/error/enum.ApiErrorKind.html\" title=\"enum lambda_runtime_client::error::ApiErrorKind\">ApiErrorKind</a>","synthetic":false,"types":["lambda_runtime_client::error::ApiErrorKind"]},{"text":"impl <a class=\"trait\" href=\"failure/trait.Fail.html\" title=\"trait failure::Fail\">Fail</a> for <a class=\"struct\" href=\"lambda_runtime_client/error/struct.ApiError.html\" title=\"struct lambda_runtime_client::error::ApiError\">ApiError</a>","synthetic":false,"types":["lambda_runtime_client::error::ApiError"]}];
+if (window.register_implementors) {window.register_implementors(implementors);} else {window.pending_implementors = implementors;}})()

@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"struct":[["DelayQueue","A queue of delayed elements."],["Expired","An entry in `DelayQueue` that has expired and removed."],["Key","Token to a value stored in a `DelayQueue`."]]};

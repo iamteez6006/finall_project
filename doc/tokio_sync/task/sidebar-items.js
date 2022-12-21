@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"struct":[["AtomicTask","A synchronization primitive for task notification."]]};

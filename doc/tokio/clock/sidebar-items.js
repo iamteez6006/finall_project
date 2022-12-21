@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"fn":[["now","Returns an `Instant` corresponding to “now”."]]};

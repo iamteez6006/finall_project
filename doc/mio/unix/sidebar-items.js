@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"struct":[["EventedFd","Adapter for `RawFd` providing an `Evented` implementation."],["UnixReady","Unix specific extensions to `Ready`"]]};

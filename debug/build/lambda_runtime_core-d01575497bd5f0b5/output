@@ -1,0 +1,3 @@
+Generating AWS Lambda metadata file
+Writing runtime metadata to: /Users/terrell/Downloads/rust_fix-main/finall_project/./debug/runtime_release
+Runtime metadata: AWS_Lambda_Rust/0.1.1 (rustc/1.63.0-stable)
